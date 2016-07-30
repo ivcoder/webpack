@@ -148,6 +148,16 @@ module.exports = {
   ]
 };
 ```
+```__dirname``` это глобальный объект в node.js, подробнее здесь: https://nodejs.org/docs/latest/api/globals.html#globals_dirname
+```[name]``` заменяется названием чанка. Подробнее здесь: http://webpack.github.io/docs/configuration.html . Наш чанк называется `app` потому что мы его так назвали в entry: 
+```
+...
+entry: {
+    app: PATHS.app
+  }
+...
+```
+Подробнее здесь: http://webpack.github.io/docs/configuration.html#entry
 
 The `entry` path could be given as a relative one. The [context](https://webpack.github.io/docs/configuration.html#context) field can be used to configure that lookup. Given plenty of places expect absolute paths, I prefer to use absolute paths everywhere to avoid confusion.
 
