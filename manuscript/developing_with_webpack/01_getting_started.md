@@ -90,6 +90,9 @@ module.exports = function () {
 };
 ```
 
+```module.exports``` это часть API, который можно использовать в файлах, собираемых Webpack-ом. Подробнее здесь:
+http://webpack.github.io/docs/api-in-modules.html
+
 Next, we are going to need an entry point for our application. It will simply `require` our component and render it through the DOM:
 
 **app/index.js**
@@ -99,6 +102,10 @@ var component = require('./component');
 
 document.body.appendChild(component());
 ```
+
+```require('./component')``` это часть API, который можно использовать в файлах, собираемых Webpack-ом. Подробнее здесь:
+http://webpack.github.io/docs/api-in-modules.html
+
 
 ## Setting Up Webpack Configuration
 
