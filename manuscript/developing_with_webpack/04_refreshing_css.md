@@ -86,7 +86,7 @@ body {
 }
 ```
 
-Also, we'll need to make Webpack aware of it. Without having a `require` pointing at it, Webpack won't be able to find the file:
+Also, we'll need to make Webpack aware of it. Without having a `require` pointing at it, Webpack won't be able to find the file. Не забываем, что если в entry передается путь к директории, то webpack ищет файл index.js в указанной директории и с него начинает поиск зависимостей:
 
 **app/index.js**
 
