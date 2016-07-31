@@ -18,7 +18,9 @@ To get started with *webpack-dev-server*, execute:
 npm i webpack-dev-server --save-dev
 ```
 
-As before, this command will generate a command below the `npm bin` directory. You could try running *webpack-dev-server* from there. The quickest way to enable automatic browser refresh for our project is to run `webpack-dev-server --inline`. `--inline`, runs the server in so called *inline* mode that writes the webpack-dev-server client to the resulting code.
+As before, this command will generate a command below the `npm bin` directory. You could try running *webpack-dev-server* from there.
+Вот так: ```node_modules/.bin/webpack-dev-server --inline```
+The quickest way to enable automatic browser refresh for our project is to run `webpack-dev-server --inline`. `--inline`, runs the server in so called *inline* mode that writes the webpack-dev-server client to the resulting code.
 
 ### Attaching *webpack-dev-server* to the Project
 
