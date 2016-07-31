@@ -159,7 +159,7 @@ entry: {
 ```
 Подробнее здесь: http://webpack.github.io/docs/configuration.html#entry
 
-The `entry` path could be given as a relative one. The [context](https://webpack.github.io/docs/configuration.html#context) field can be used to configure that lookup. Given plenty of places expect absolute paths, I prefer to use absolute paths everywhere to avoid confusion.
+The `entry` path could be given as a relative one. The [context](https://webpack.github.io/docs/configuration.html#context) field can be used to configure that lookup. Given plenty of places expect absolute paths, I prefer to use absolute paths everywhere to avoid confusion. В случае, когда указывается путь к директории, то в указанной директории ищется файл index.js. Начиная с найденного (или прямо указанного) файла начинается поиск зависимостей.
 
 If you execute `node_modules/.bin/webpack`, you should see output:
 
