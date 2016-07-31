@@ -117,7 +117,7 @@ exports.devServer = function(options) {
   };
 }
 ```
-
+```exports``` это часть webpack API, подробнее здесь: http://webpack.github.io/docs/api-in-modules.html
 It's plenty of code, but it's better to encapsulate it so it contains ideas we understand and want to reuse later on. Fortunately hooking up this part with our main configuration is simple:
 
 **webpack.config.js**
