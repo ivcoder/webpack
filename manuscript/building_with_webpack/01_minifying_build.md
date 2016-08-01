@@ -14,8 +14,10 @@ To get started, we should generate a baseline build so we have something to opti
 npm i react --save
 ```
 Отличия `--save` и `--save-dev`:
+
 `--save`:
 ```Package will appear in your dependencies```
+
 `--save-dev`:
 ```--save-dev: Package will appear in your devDependencies```
 Подробнее тут: https://docs.npmjs.com/cli/install
