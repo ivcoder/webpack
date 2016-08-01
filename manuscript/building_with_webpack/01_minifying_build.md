@@ -19,7 +19,7 @@ npm i react --save
 ```Package will appear in your dependencies```
 
 `--save-dev`:
-```--save-dev: Package will appear in your devDependencies```
+```Package will appear in your devDependencies```
 Подробнее тут: https://docs.npmjs.com/cli/install
 
 We also need to make our project depend on it:
