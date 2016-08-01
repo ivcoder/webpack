@@ -72,7 +72,7 @@ In this case, *css-loader* gets evaluated first, then *style-loader*. *css-loade
 
 T> Loaders are transformations that are applied to source files, and return the new source. Loaders can be chained together, like using a pipe in Unix. See Webpack's [What are loaders?](http://webpack.github.io/docs/using-loaders.html) and [list of loaders](http://webpack.github.io/docs/list-of-loaders.html).
 
-W> If `include` isn't set, Webpack will traverse all files within the base directory. This can hurt performance! It is a good idea to set up `include` always. There's also `exclude` option that may come in handy. Prefer `include`, however.
+W> If `include` isn't set, Webpack will traverse all files within the base directory. This can hurt performance! It is a good idea to set up `include` always. There's also `exclude` option that may come in handy. Prefer `include`, however. На самом деле `include` - это условие для loader-a. Т.е. если файл входит в зависимости И и находится по пути, указанному в `include`, то он обрабатывается loader-ом. Подробнее тут http://webpack.github.io/docs/configuration.html#module-loaders и тут http://stackoverflow.com/questions/34623229/webpack-loaders-and-include
 
 ## Setting Up the Initial CSS
 
