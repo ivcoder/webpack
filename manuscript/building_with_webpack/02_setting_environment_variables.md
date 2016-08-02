@@ -1,6 +1,6 @@
 # Setting Environment Variables
 
-React relies on `process.env.NODE_ENV` based optimizations. If we force it to `production`, React will get built in an optimized manner. This will disable some checks (e.g., property type checks). Most importantly it will give you a smaller build and improved performance.
+React relies on `process.env.NODE_ENV` based optimizations. If we force it (если мы установим эту переменную) to `production`, React will get built in an optimized manner. This will disable some checks (e.g., property type checks). Most importantly it will give you a smaller build and improved performance.
 
 ## The Basic Idea of `DefinePlugin`
 
