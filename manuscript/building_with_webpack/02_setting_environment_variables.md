@@ -4,7 +4,8 @@ React relies on `process.env.NODE_ENV` based optimizations. If we force it (ес
 
 ## The Basic Idea of `DefinePlugin`
 
-Webpack provides `DefinePlugin`. It is able to rewrite matching **free variables**. To understand the idea better, consider the example below:
+Webpack provides `DefinePlugin`. It is able to rewrite matching **free variables**. Free variables are simply the variables that are neither locally declared nor passed as parameter. Подробнее тут: http://stackoverflow.com/questions/12934929/what-are-free-variables
+To understand the idea better, consider the example below:
 
 ```javascript
 var foo;
