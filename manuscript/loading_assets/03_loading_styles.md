@@ -8,6 +8,7 @@ Loading vanilla CSS is fairly straightforward as you can see in the example belo
 
 
 **webpack.config.js**
+
 Чанк определен так:
 ```
 style: path.join(__dirname, 'app', 'main.css'),
