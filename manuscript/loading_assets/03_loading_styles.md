@@ -4,9 +4,15 @@ Loading styles is a standard operation. There are a lot of variants depending on
 
 ## Loading CSS
 
-Loading vanilla CSS is fairly straightforward as you can see in the example below. It parses the styles in the given `include` path (accepts an array too) while making sure only files ending with `.css` are matched. The definition then applies both *style-loader* and *css-loader* on it:
+Loading vanilla CSS is fairly straightforward as you can see in the example below. It parses the styles in the given `include` path (accepts an array too) (т.е. путь `include` это как whitelist - только файлы по этому пути будут обработаны, остальные файлы, даже если они входят в зависимости, обработаны не будут) while making sure only files ending with `.css` are matched. The definition then applies both *style-loader* and *css-loader* on it:
+
 
 **webpack.config.js**
+Чанк определен так:
+```
+style: path.join(__dirname, 'app', 'main.css'),
+
+```
 
 ```javascript
 const common = {
